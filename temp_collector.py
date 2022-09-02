@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 from pycep_correios import get_address_from_cep, WebService
 import requests
+import sys
+
+CEP = sys.argv[1]
 
 def getTemperature(CEP):
     address = get_address_from_cep(CEP, webservice=WebService.CORREIOS)
@@ -12,4 +15,4 @@ def getTemperature(CEP):
     return temperature
 
 # example
-# print(getTemperature("90010-170"))
+print(getTemperature(CEP))
