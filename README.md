@@ -19,9 +19,4 @@ pip install pycep_correios
 python .\temp_collector.py 90000-000
 ```
 
-4 - The spreadsheet will be created inside the app directory.
-```
-links-collected.xlsx
-```
-
 <i>PS: I did it for a job interview assignment.</i>
